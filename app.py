@@ -42,6 +42,24 @@ def makeWebhookResult(req):
     print(speech)
 
     return {
+        "data" : {
+        "basicCard": {
+                    "title": "title",
+                    "subtitle": "subtitle",
+                    "formattedText": "text",
+                    "image": {
+                        "url": "https://www.webex.com/content/dam/webex/eopi/Americas/USA/en_us/global/images/logos/Cisco_WebEx_wordmark_lockupx2.png"
+                    },
+                    "buttons": [
+                        {
+                            "title": "My PMR",
+                            "openUrlAction": {
+                                "url": "https://www.go.webex.com/meet/yingczha"
+                            }
+                        }
+                    ]
+                }
+        },
         "speech": speech,
         "displayText": speech,
         #"data": {},

@@ -44,10 +44,10 @@ def makeWebhookResult(req):
     return {
         "speech": speech,
         "displayText": speech,
-    
         "basicCard": {
             "title": "Math & prime numbers",
             "formattedText": "42 is an even composite number.",
+            "image": {
                 "url": "https://www.google.com/search?q=42",
                 "accessibilityText": "Image alternate text"
             },

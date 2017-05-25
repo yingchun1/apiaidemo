@@ -42,20 +42,34 @@ def makeWebhookResult(req):
     print(speech)
 
     return {
-        "speech": speech,
-        "displayText": speech,
-        "basicCard": {
-            "title": "Math & prime numbers",
-            "formattedText": "42 is an even composite number.",
+  "items": [
+    {
+      "simpleResponse": {
+          "textToSpeech": "test basis card",
+          #"ssml": string,
+          "displayText":  "test basis card"
+      }
+    },
+    {
+    "basic_card": {
+            "title": "Nearest meeting title",
+            "subtitle": "sub title",
+            "formatted_text": "text",
             "image": {
-                "url": "https://www.google.com/search?q=42",
-                "accessibilityText": "Image alternate text"
+                "url": "https://go.webex.com/mw3200/mywebex/html/img/cisco-webex-meetings.png?ver=2452670390"
             },
-            "buttons": []
-        },
-        # "contextOut": [],
-        "source": "apiai-onlinestore-shipping"
+            "buttons": [
+                {
+                    "title": "yingczha's personal room",
+                    "open_url_action": {
+                        "url": "https://go.webex.com/meet/yingczha"
+                    }
+                }
+            ]
+        }
     }
+  ]
+}
 
 
 if __name__ == '__main__':

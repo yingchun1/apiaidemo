@@ -32,7 +32,7 @@ def makeWebhookResult(req):
         return {req.get("result").get("action")}
     result = req.get("result")
     parameters = result.get("parameters")
-    meetingtype = parameters.get("meetingtype")
+    meetingtype = parameters.get("meetingType")
 
     cost = {'mc':'meeting center', 'tc':'training center', 'ec':'event center'}
 

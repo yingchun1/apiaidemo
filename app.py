@@ -36,7 +36,8 @@ def makeWebhookResult(req):
 
     cost = {'mc':'meeting center', 'tc':'training center', 'ec':'event center'}
 
-    speech = meetingtype + " is " + str(cost[meetingtype]) + "."
+    speech = 'ewqewqeqwewqwqx'
+    #meetingtype + " is " + str(cost[meetingtype]) + "."
 
     print("Response:")
     print(speech)

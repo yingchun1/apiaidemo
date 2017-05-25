@@ -47,7 +47,7 @@ def makeWebhookResult(req):
     
         "basicCard": {
             "title": "Math & prime numbers",
-            "formattedText": "42 is an even composite number."
+            "formattedText": "42 is an even composite number.",
                 "url": "https://www.google.com/search?q=42",
                 "accessibilityText": "Image alternate text"
             },

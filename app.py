@@ -29,7 +29,7 @@ def webhook():
 
 def makeWebhookResult(req):
     if req.get("result").get("action") != "meeting.more":
-        return {}
+        return {req.get("result").get("action")}
     result = req.get("result")
     parameters = result.get("parameters")
     meetingtype = parameters.get("meetingtype")
